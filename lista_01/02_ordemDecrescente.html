@@ -1,0 +1,27 @@
+<script>
+    // ENTRADA
+    let num1 = Number(prompt("Digite o primeiro número:"));
+    let num2 = Number(prompt("Digite o segundo número:"));
+    let num3 = Number(prompt("Digite o terceiro número:"));
+
+    // PROCESSAMENTO E SAÍDA
+    if (num1 >= num2 && num1 >= num3) {
+        if (num2 >= num3) {
+            alert("Ordem decrescente: " + num1 + ", " + num2 + ", " + num3);
+        } else {
+            alert("Ordem decrescente: " + num1 + ", " + num3 + ", " + num2);
+        }
+    } else if (num2 >= num1 && num2 >= num3) {
+        if (num1 >= num3) {
+            alert("Ordem decrescente: " + num2 + ", " + num1 + ", " + num3);
+        } else {
+            alert("Ordem decrescente: " + num2 + ", " + num3 + ", " + num1);
+        }
+    } else {
+        if (num1 >= num2) {
+            alert("Ordem decrescente: " + num3 + ", " + num1 + ", " + num2);
+        } else {
+            alert("Ordem decrescente: " + num3 + ", " + num2 + ", " + num1);
+        }
+    }
+</script>
