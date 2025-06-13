@@ -1,0 +1,39 @@
+<script>
+    /*
+    PROBLEMA: ESTAÇÃO DO ANO
+    Pergunta o hemisfério e o mês atual, e informa a estação correspondente.
+    */
+
+    // ENTRADA
+    const hemisferio = prompt("Informe o hemisfério (N para Norte, S para Sul):").toUpperCase();
+    const mes = prompt("Informe o mês atual (ex: janeiro, fevereiro...):").toLowerCase();
+
+    // PROCESSAMENTO e SAÍDA
+    if (hemisferio === "S") {
+        if (mes === "Dezembro" || mes === "Janeiro" || mes === "Fevereiro") {
+            alert("A estação é Verão");
+        } else if (mes === "Março" || mes === "Abril" || mes === "Maio") {
+            alert("A estação é Outono");
+        } else if (mes === "Junho" || mes === "Julho" || mes === "Agosto") {
+            alert("A estação é Inverno");
+        } else if (mes === "Setembro" || mes === "Outubro" || mes === "Novembro") {
+            alert("A estação é Primavera");
+        } else {
+            alert("Mês inválido. Verifique o nome digitado.");
+        }
+    } else if (hemisferio === "N") {
+        if (mes === "Dezembro" || mes === "Janeiro" || mes === "Fevereiro") {
+            alert("A estação é Inverno");
+        } else if (mes === "Março" || mes === "Abril" || mes === "Maio") {
+            alert("A estação é Primavera");
+        } else if (mes === "Junho" || mes === "Julho" || mes === "Agosto") {
+            alert("A estação é Verão");
+        } else if (mes === "Setembro" || mes === "Outubro" || mes === "Novembro") {
+            alert("A estação é Outono");
+        } else {
+            alert("Mês inválido. Verifique o nome digitado.");
+        }
+    } else {
+        alert("Hemisfério inválido. Use apenas N ou S.");
+    }
+</script>
